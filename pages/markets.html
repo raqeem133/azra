@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Azra markets and industries served.">
+    <title>Markets - Azra</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">SKIP TO MAIN CONTENT</a>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="../index.html" class="logo-link">
+                            <span class="logo-text">AZRA</span>
+                        </a>
+                    </div>
+                    <button class="hamburger-menu" id="hamburgerMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="navigation" id="navigation">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="company.html" class="nav-link">Company</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="markets.html" class="nav-link">Markets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="capabilities.html" class="nav-link">Capabilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="careers.html" class="nav-link">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="insights.html" class="nav-link">Insights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link cta-button">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Markets We Serve</h1>
+                <p class="hero-subtitle">Mission-critical solutions across industries</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="markets-grid">
+                    <article class="market-card">
+                        <h3 id="aviation">Aviation</h3>
+                        <p>We deliver advanced solutions for commercial and military aviation, including systems integration, software, and mission-critical services.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="defense">Defense</h3>
+                        <p>Azra provides advanced defense systems, cybersecurity solutions, and integrated services to the Department of Defense and defense contractors.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="energy">Energy & Industry</h3>
+                        <p>We support the energy sector with technology solutions, engineering services, and consulting expertise.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="government">Government</h3>
+                        <p>Our government solutions include IT modernization, cloud services, and mission support to federal agencies.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="healthcare">Healthcare</h3>
+                        <p>We deliver healthcare IT solutions, clinical information systems, and healthcare data management services.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="homeland">Homeland Security</h3>
+                        <p>Azra provides solutions for border security, emergency management, and critical infrastructure protection.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="intelligence">Intelligence</h3>
+                        <p>We serve the intelligence community with advanced analytics, data management, and mission solutions.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="science">Science</h3>
+                        <p>Our science solutions include research support, scientific computing, and engineering services.</p>
+                    </article>
+
+                    <article class="market-card">
+                        <h3 id="space">Space</h3>
+                        <p>We provide space systems, satellite solutions, and mission operations support to government and commercial customers.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="company.html">Who We Are</a></li>
+                            <li><a href="company.html">Leadership</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Azra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>
+
+<style>
+.markets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 32px 0;
+}
+
+.market-card {
+    background: linear-gradient(135deg, #f5f5f5 0%, #efefef 100%);
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.market-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.market-card h3 {
+    color: #003d7a;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.market-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.content-section {
+    padding: 64px 0;
+}
+
+.content-section h2,
+.content-section h3 {
+    color: #003d7a;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.content-section p {
+    color: #666;
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+</style>

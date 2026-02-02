@@ -1,0 +1,321 @@
+/* ============================================
+   Responsive Design - Tablet and Mobile
+   ============================================ */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navigation {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: left;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 40;
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: var(--spacing-md);
+        border-bottom: 1px solid var(--border-color);
+        width: 100%;
+    }
+
+    .nav-link.cta-button {
+        border-radius: 0;
+    }
+
+    .submenu {
+        position: static;
+        display: none;
+        background-color: var(--bg-light);
+        box-shadow: none;
+        border-top: none;
+        border-left: 3px solid var(--secondary-color);
+    }
+
+    .nav-item.active .submenu {
+        display: block;
+    }
+
+    .submenu a {
+        padding: var(--spacing-md);
+        padding-left: var(--spacing-lg);
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .insights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .carousel-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 12px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .cookie-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .header-content {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-sm);
+        min-height: 350px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .insights-section,
+    .partner-section,
+    .job-section,
+    .community-section,
+    .contact-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .partner-content h2,
+    .job-content h2,
+    .community-section h2,
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .job-search-form {
+        flex-direction: column;
+    }
+
+    .job-search-form input,
+    .btn-search {
+        width: 100%;
+    }
+
+    .social-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 11px;
+    }
+
+    .footer-main {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-secondary {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .additional-links {
+        gap: var(--spacing-sm);
+    }
+
+    .additional-links a {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .social-links {
+        gap: var(--spacing-sm);
+    }
+
+    .cookie-banner {
+        padding: var(--spacing-sm);
+    }
+
+    .cookie-banner p {
+        font-size: 12px;
+    }
+
+    .cookie-accept {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 12px;
+    }
+}
+
+/* Extra Small (320px and below) */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .partner-content h2,
+    .job-content h2,
+    .community-section h2,
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    .social-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer-content {
+        font-size: 12px;
+    }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+    header,
+    footer,
+    .cookie-banner,
+    .btn {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ============================================
+   Accessibility - Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ============================================
+   Accessibility - Dark Mode
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-white: #1a1a1a;
+        --bg-light: #2a2a2a;
+        --text-dark: #e0e0e0;
+        --text-light: #b0b0b0;
+        --border-color: #404040;
+    }
+
+    .header {
+        background-color: var(--bg-white);
+    }
+
+    .submenu {
+        background-color: var(--bg-light);
+    }
+
+    .insight-card {
+        background-color: var(--bg-white);
+    }
+
+    .nav-link {
+        color: var(--text-dark);
+    }
+
+    .submenu a:hover {
+        background-color: var(--bg-white);
+    }
+}
